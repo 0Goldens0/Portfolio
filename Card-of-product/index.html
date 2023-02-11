@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/chief-slider.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main>
+    <section class="ordering">
+      <div class="container">
+        <h1 class="ordering__heading">Оформление заказа</h1>
+        <div class="ordering__description-container">
+          <div class="orederig__container-left">
+            <div class="ordering__delivery">
+              <div class="slider delivery__cards dekstop"> 
+                <div class="slider__container">
+                  <div class="delivery__heading-btn">
+                    <h2 class="delivery__heading heading">Доставка</h2>
+                    <div class="nav__btn-block">
+                      <a href="#" class="slider__control nav__btn back" data-slide="prev">
+                      </a>
+                      <a href="#" class="slider__control nav__btn next" data-slide="next">
+                      </a>
+                    </div>
+                  </div> 
+                  <div class="slider__wrapper">
+                    <div class="slider__items cards__delivery-list">
+                      <div class="slider__item cards__delivery-item">
+                        <div class="item__container-left">
+                            <h3 class="item__heding">Почта России, курьер — 24-26 сент.</h3>
+                            <p class="item__description">ул. Академика Королева, 73/3,
+                              <br>
+                              Петропавловск- Камчатский,
+                              <br>
+                              683000</p>
+                          </div>
+                        <div class="item__container-right">+367&nbsp;₽</div>
+                      </div>
+                      <div class="slider__item cards__delivery-item">
+                        <div class="item__container-left">
+                            <h3 class="item__heding">Лабиринт, курьер — 25 сент.</h3>
+                            <p class="item__description">Можайское шоссе,д. 21, кв. 50, 
+                              <br>
+                              Москва, 121471</p>
+                          </div>
+                        <div class="item__container-right">0&nbsp;₽</div>
+                      </div>
+                      <div class="slider__item cards__delivery-item">
+                        <div class="item__container-left">
+                            <h3 class="item__heding">Почта России, курьер — 24-26 сент.</h3>
+                            <p class="item__description">ул. Академика Королева, 73/3,
+                              <br>
+                              Петропавловск- Камчатский,
+                              <br>
+                              683000</p>
+                          </div>
+                        <div class="item__container-right">+367&nbsp;₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider delivery__cards"> 
+                <div class="slider__container">
+                  <div class="delivery__heading-btn mobile">
+                    <h2 class="delivery__heading heading">Доставка</h2>
+                    <div class="nav__btn-block">
+                      <a href="#" class="slider__control nav__btn back" data-slide="prev">
+                      </a>
+                      <a href="#" class="slider__control nav__btn next" data-slide="next">
+                      </a>
+                    </div>
+                  </div> 
+                  <div class="slider__wrapper">
+                    <div class="slider__items cards__delivery-list">
+                      <!-- mobile -->
+                      <div class="slider__item cards__delivery-item mobile">
+                        <div class="item__container-left">
+                            <h3 class="item__heding">Лабиринт, курьер — 25&nbsp;сен.,
+                            <br>
+                              <span class="non-greasy">+200 ₽</span></h3>
+                            <p class="item__description">
+                              ул. Алексея Алексеева, 194 Б, Москва,
+                              <br>
+                              123456
+                            </p>
+                        </div>
+                      </div>
+                      <div class="slider__item cards__delivery-item mobile">
+                        <div class="item__container-left">
+                            <h3 class="item__heding">Почта России, курьер — 24-26 сент. <span class="non-greasy">+200 ₽</span></h3>
+                            <p class="item__description">
+                              ул. Алексея Алексеева, 194 Б, Москва,
+                              <br>
+                              123456
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="choice__link">Выбрать новое место и способ</a>
+
+              <div class="date__cards">
+                <ul class="cards__date-list">
+                  <li class="cards__date-item">
+                    <h3 class="item__heding">пн, 24 сен <span class="dekstop"> — ср, 26 сен</span></h3>
+                    <p class="item__description">10:00–19:00</p>
+                  </li>
+                  <li class="cards__date-item">
+                    <h3 class="item__heding">чт, 27 сен <span class="dekstop"> — пт, 28 сен</span></h3>
+                    <p class="item__description">10:00–19:00</p>
+                  </li>
+                  <li class="cards__date-item dekstop">
+                    <a href="#" class="choice__link">Другие дата и время</a>
+                  </li>
+                </ul>
+                <a href="#" class="choice__link mobile">Другие дата и время</a>
+                <div class="checkbox__item">
+                  <label class="checkbox__item-text">
+                    <input class="check" type="checkbox" name="check" aria-label="Viber/СМС уведомления о статусе заказа">
+                    Viber/СМС уведомления о статусе заказа
+                    <span></span>
+                  </label>
+                </div>  
+                  <div class="checkbox__item">
+                    <label class="checkbox__item-text">
+                      <input class="check" type="checkbox" name="check" aria-label="Оставить у двери (бесконтактная доставка)" checked disabled>
+                      Оставить у двери (бесконтактная доставка)
+                      <span></span>
+                    </label>
+                  </div>
+              </div>
+            </div>
+            <div class="recipient">
+              <div class="heading-mobile">
+                <h2 class="recipient__heading heading">Получатель</h2>
+                <a href="#" class="recipient__choice__link choice__link mobile">Новый получатель</a>
+              </div>
+              <div class="recipient__selects">
+                <div class="select__left">
+                  <label class="fio dekstop" for="recipient__fio">Имя и фамилия <span class="mobile-label">как в паспорте</span></label>
+                <select class="recipient__fio dekstop" name="recipient__fio" id="recipient__fio">
+                  <option class="dekstop" value="">Вольфганг Вениаминович Константинопольский</option>
+                  <option class="dekstop" value="">Вольфганг Вениаминович Константинопольский</option>
+                </select>
+                <label class="fio mobile" for="recipient__fio-mob">Имя и фамилия <span class="mobile-label">как в паспорте</span></label>
+                <select class="recipient__fio mobile" name="recipient__fio" id="recipient__fio-mob">
+                  <option value="">Вольфганг Константинопольски</option>
+                  <option value="">Вольфганг Константинопольский</option>
+                </select>
+
+                <a href="#" class="recipient__choice__link choice__link dekstop">Новый получатель</a>
+                </div>
+                <div class="select__right">
+                  <label class="phone" for="recipient__phone">Контактный телефон</label>
+                  <select class="recipient__phone" name="recipient__phone" id="recipient__phone">
+                    <option value="">+7 910 234-56-78</option>
+                    <option value="">+7 910 234-56-78</option>
+                  </select>
+                  <a href="#" class="recipient__choice__link choice__link">Новый телефон</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ordreing__container-right">
+            <h2 class="right__heading heading">В заказе 4 товара <span class="non-greasy">(2 кг)</span></h2>
+            <ul class="right__description-list">
+              <li class="description__list-item">
+                <p class="item__text">Цена товаров</p>
+                <span class="sum">29 456 ₽</span>
+              </li>
+              <li class="description__list-item">
+                <p class="item__text">Все скидки</p>
+                <span class="sum">–7 732 ₽</span>
+              </li>
+              <li class="description__list-item">
+                <p class="item__text">Скидка за предоплату</p>
+                <span class="sum">–3%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment">
+      <div class="container payment__container">
+        <button class="btn">Оформить и оплатить</button>
+        <div class="total dekstop">
+          <p class="total__description">Итого к оплате на сайте:</p>
+          <span class="sum">21 072 ₽</span>
+        </div>
+        <div class="total mobile">
+          <p class="total__description">К оплате: 21 072 ₽</p>
+          <button href="" class="payment__popup choice__link" id="popup-btn">Подробнее</button>
+        </div>
+        <div class="popup" id="popup">
+          <div>
+            <h2 class="right__heading heading">В заказе 5 товаров <span class="non-greasy">(2 кг)</span></h2>
+            <ul class="right__description-list">
+              <li class="description__list-item">
+                <p class="item__text">Цена товаров</p>
+                <span class="sum">29 456 ₽</span>
+              </li>
+              <li class="description__list-item" style="border-bottom: 1px solid #D6D6D6; margin-bottom: 14px; padding-bottom: 14px;">
+                <p class="item__text">Все скидки</p>
+                <span class="sum">–7 732 ₽</span>
+              </li>
+              <li class="description__list-item">
+                <p class="item__text">Скидка за предоплату</p>
+                <span class="sum">–3%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="btn__closed">
+            <button href="" class="closed__popup-btn" id="popup-closed">
+              Закрыть подробности
+            </button>  
+          </div>
+        </div>
+        
+  
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/chief-slider.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/popup.js"></script>
+</body>
+</html>
