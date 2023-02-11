@@ -1,0 +1,605 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  --margin-bottom: 15px;
+  --header: 30px;
+  --color-tex: #2E2B44;
+  --color-blue: #3F2AFF;
+  --color-white: #fff;
+  --transition: background-size .3s;
+  --background-size: 100% 2px;
+  --transition: background-color .3s;
+  --color-btn-transition: #261a96;
+  --font-size-top: 18px;
+  --font-size-bottom: 16px;
+  --font-size-header: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+  display: inline-block;
+}
+
+input {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+svg {
+  overflow: unset;
+}
+
+/* .container {
+  max-width: 1110px;
+} */
+
+
+.btn {
+  color: var(--color-white);
+  font-size: var(--font-size-bottom);
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-blue);
+  transition: background-color .7s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  outline: none;
+  background-color: var(--color-btn-transition);
+}
+
+.btn:focus {
+  outline: -webkit-focus-ring-color auto 1px;}
+
+.btn:active {
+  outline: none;
+  background-color: var(--color-btn-transition);
+}
+
+/* Хидер */
+
+.header {
+  padding-top: 29px;
+  padding-bottom: var(--header);
+  background: var(--color-blue);
+}
+
+.logo svg path {
+  transition: fill, transform 0.3s ease-in-out;
+}
+
+.logo:hover svg path {
+  fill: #98e3ff;
+  transform: scale(150%);
+}
+
+
+.nav {
+  display: flex;
+  padding: 0;
+}
+
+.nav__list {
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 12%;
+}
+
+.nav__link {
+  color: var(--color-white);
+  font-size: var(--font-size-top);
+}
+
+.nav__link {
+  color: var(--color-white);
+  font-size: var(--font-size-top);
+  background-image: linear-gradient(
+    to right,
+    #98e3ff,
+    #98e3ff 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__link:before{
+  content: '';
+  background: #98e3ff;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+ background-position: 0;
+}
+
+.nav__link:hover::before{
+  width: 100%;
+}
+
+.nav__link:active {
+  color: #00acee;
+}
+
+
+.burger {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 525px;
+  padding: 70px 50px 20px 75px;
+  background: radial-gradient( #555681,#212133);
+  transition: transform .3s ease-in-out;
+  transform: translateX(-101%);
+}
+
+.menu__closed {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__closed svg rect {
+  fill: var(--color-white);
+}
+
+.menu.is-active {
+  transform: none;
+}
+
+.nav-link__effects {
+  font-size: 30px;
+}
+
+.nav__item-adaptive:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+
+/* Курсы 3D моделирования */
+
+.hero {
+  padding-top: 15px;
+  padding-bottom: 13px;
+  background: radial-gradient( #555681,#212133);
+}
+
+.hero__heading {
+  margin: 115px 0 30px 0;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.hero__description {
+  margin-bottom: 70px;
+  font-size: var(--font-size-top);
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.hero__img {
+  max-height: 593px;
+  background-image: url(/img/hero-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero__button {
+  padding: 24px 76px;
+  margin-bottom: 115px;
+}
+
+/* Преимущества обучения в skillbox */
+
+.about__container-top {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: var(--header);
+}
+
+.about__text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.about__header {
+  margin-bottom: 30px;
+  font-size: var(--font-size-header);
+  font-weight: bold;
+  color: #2E2B44;
+}
+
+.about__description {
+  padding-right: 26px;
+  font-size: var(--font-size-bottom);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+}
+
+.about__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.item-description {
+  margin-left: 30px;
+  font-size: var(--font-size-bottom);
+  font-weight: bold;
+  line-height: 1.2;
+  color: #666;
+}
+
+/* Блок "Преподаватели" */
+
+.teachers {
+  background: radial-gradient( #555681,#212133);
+}
+
+.teachers__heading {
+  margin: 0;
+  padding: 80px 0 30px 0;
+  font-size: var(--font-size-header);
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.teachers__list {
+  padding: 0 0 80px 0;
+}
+
+.teachers-portrait {
+  border-radius: 30px 30px 0 0;
+}
+
+.item__heading {
+  margin: 30px 0 15px 0;
+  font-size: var(--font-size-top);
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+.teachers-description {
+  font-size: var(--font-size-bottom);
+  font-weight: 400px;
+  line-height: 1.5;
+  color: #85859B;
+}
+
+/* Секция "Курсы" */
+
+.courses {
+  margin-bottom: 48px;
+}
+
+.courses__header {
+  margin: 0 0 var(--header) 0;
+  font-size: var(--font-size-header);
+  font-weight: bold;
+}
+
+.courses-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #EDF0F9;
+  border-radius: 20px 20px;
+}
+
+.time {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+
+.cources__container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 30px;
+}
+
+.courcses__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.courses__item-heading {
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-size: var(--font-size-top);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.courses-description {
+  margin-bottom: 32px;
+  font-size: var(--font-size-bottom);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+}
+
+.courses-bnt {
+  padding: 20px 59px;
+}
+
+/* Подвал */
+
+.footer {
+  background: var(--color-tex);
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0;
+}
+
+.contacts-item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.contacts-icon svg path {
+  transition: fill, transform 0.4s ease-in-out;
+}
+
+.fb:hover svg path {
+  fill: #3b5998;
+  transform: scale(150%);
+}
+
+.tw:hover svg path {
+  fill: #00acee;
+  transform: scale(150%);
+}
+
+.inst:hover svg path {
+  fill: #E1306C;
+  transform: scale(150%);
+}
+
+.you:hover svg path {
+  fill: #c4302b;
+  transform: scale(150%);
+}
+
+@media (max-width: 1200px) {
+
+  .teachers-portrait {
+    border-radius: 40px 40px 0 0;
+}
+}
+
+@media (max-width: 991px) {
+
+  .container {
+    max-width: 768px;
+  }
+
+  .hero__heading {
+    font-size: 50px;
+  }
+
+  .about__list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-description {
+    margin: 15px 0 0 0;
+  }
+
+  .nav__list {
+    justify-content: space-between;
+  }
+
+  .about__container-top {
+    align-items: flex-start;
+}
+}
+
+
+@media (max-width: 745px) {
+
+
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__logo-block {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .nav__link-block {
+    width: 90%;
+  }
+
+  .hero__img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+
+  section {
+    margin-bottom: 50px;
+  }
+  .nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  .nav__link-block {
+    display: none;
+  }
+
+  .nav__logo-block {
+    text-align: start;
+    margin: 0 155px 0 0;
+}
+
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+  }
+
+  .burger svg rect {
+    fill: var(--color-white);
+  }
+
+  .mob_container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__heading {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .hero__description {
+    margin-bottom: 50px;
+  }
+
+  .hero__button {
+    margin-bottom: 37px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .about__container-top img {
+    display: none;
+  }
+
+  .about__header {
+    font-size: 20px;
+  }
+
+  .about__list-item {
+    flex-direction: row;
+  }
+
+  .about__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .item-description {
+    margin-left: 30px;
+  }
+
+  .teachers__heading {
+    font-size: 20px;
+    padding: 50px 0 30px 0;
+  }
+
+  .teachers-item {
+    width: 100%;
+  }
+
+  .teachers-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .courses__header {
+    font-size: 20px;
+  }
+}
+
+
