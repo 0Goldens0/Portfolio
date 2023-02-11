@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tzeezotje</title>
+  <link rel="stylesheet" href="/style/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu">
+      <div class="menu__close">
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="memu__nav">
+        <li class="nav__item">
+          <a href="#days" class="nav__link">À la carte</a>
+        </li>
+        <li class="nav__item">
+          <a href="#servise" class="nav__link">Wijnkaart</a>
+        </li>
+        <li class="nav__item">
+          <a href="#food" class="nav__link">Lunchmenu</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container header__container">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="" class="nav__logo-link">
+            <img class="logo__img" src="/img/logo.png" alt="логотип">
+            <img class="logo__mob" src="/img/logo_footer.png" alt="логотип">
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#days" class="nav__link">À la carte</a>
+          </li>
+          <li class="nav__item">
+            <a href="#servise" class="nav__link">Wijnkaart</a>
+          </li>
+          <li class="nav__item">
+            <a href="#food" class="nav__link">Lunchmenu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav__phone-block">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#D3B47F" stroke-width="1.5" stroke-miterlimit="10"/>
+            <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5" stroke="#D3B47F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 9C22 5.13 18.87 2 15 2" stroke="#D3B47F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <a href="tel:+3292825725" class="phone__link">
+            +32 9 282 57 25
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <p class="hero__description">OPEN EVERYDAY 6AM - 9PM</p>
+        <h1 class="hero__title">A bad day with lunch is better than a good day without it.</h1>
+        <div class="hero__btns">
+          <button class="btn hero__btn">
+            Reserve a table
+          </button>
+          <div class="hero__social">
+            <a class="social__link" href="#">Fb</a>
+            <a class="social__link" href="#">Ig</a>
+            <a class="social__link" href="#">Tw</a>
+            <a class="social__link" href="#">Yt</a>
+          </div>
+        </div>
+        <img class="hero__img" src="/img/hero-img.jpg" alt="фон">
+      </div>
+      <img class="header__hero-bg" src="/img/hero-bg.jpg" alt="фон">
+      <div class="modal__body">
+        <div class="modal__window">
+          <div class="close">
+            <span></span>
+            <span></span>
+          </div>
+          <h3 class="modal__title">Reserve a table</h3>
+          <form class="modal__form" action="mail.php" method="post">
+            <input type="hidden" name="project_name" value="Tzeezotje">
+            <input type="hidden" name="admin_email" value="EcoKozhevnikov@yandex.ru">
+            <input type="hidden" name="form_subject" value="Reserve Form">
+            <div class="inp__container">
+              <label class="inp__label" for="name">Name</label>
+              <input
+                class="inp modal_inp"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Input your name"
+                required
+                >
+            </div>
+            <div class="inp__container">
+              <label class="inp__label" for="mail">Email</label>
+              <input
+                class="inp modal_inp"
+                type="text"
+                name="mail"
+                id="mail"
+                placeholder="Input your email"
+                required
+                >
+            </div>
+            <div class="inp__container inp__message">
+              <label class="inp__label" for="message">Speciale Request</label>
+              <textarea
+                class="inp message modal_inp"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Input your special request"
+                ></textarea>
+            </div>
+            <input class="btn modals__btn" type="submit" id="submit" value="Send">
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="days" id="days">
+      <div class="container days__container element-animation">
+        <div class="days__left">
+          <div class="days__left-content">
+            <h5 class="content__heding">Woensdag 12/01</h5>
+            <p class="content__description">Salade met Serrano<span>···</span>Steak Tartaar</p>
+          </div>
+          <div class="days__left-content">
+            <h5 class="content__heding">Donderdag 13/01</h5>
+            <p class="content__description">Toast Roquefort<span>···</span>Penne met Kip en Prei</p>
+          </div>
+          <div class="days__left-content">
+            <h5 class="content__heding">Vrijdag 14/01</h5>
+            <p class="content__description">Verrassing van de Chef<span>···</span>Penne met Kip en Prei</p>
+          </div>
+          <div class="days__left-content">
+            <h5 class="content__heding">Vrijdag 15/01</h5>
+            <p class="content__description">Verrassing van de Chef<span>···</span>Penne met Kip en Prei</p>
+          </div>
+          <div class="days__left-content">
+            <h5 class="content__heding">Vrijdag 16/01</h5>
+            <p class="content__description">Verrassing van de Chef<span>···</span>Penne met Kip en Prei</p>
+          </div>
+        </div>
+        <div class="days__right">
+          <img class="days__right-img" src="/img/days_1.jpg" alt="фото интерьера">
+          <img class="days__right-img" src="/img/days_2.jpg" alt="фото интерьера">
+          <div class="days__right-border"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servise" id="servise">
+      <div class="container servise__container element-animation">
+        <div class="swiper-button-prev servise__prev"></div>
+        <div class="swiper-button-next servise__next"></div>
+        <div class="swiper swiper-servise">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide service__slide">
+              <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+              </svg>
+              <h2 class="servise__title">Goede service, lekker eten, toffe ambiance</h2>
+              <p class="servise__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+              <div class="servise__name">ALAIN HEYNDRICKX</div>
+            </div>
+            <div class="swiper-slide service__slide">
+              <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+              </svg>
+              <h3 class="servise__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+              <p class="servise__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit iste voluptate itaque dolore pariatur, aperiam est fuga dolores atque placeat quasi optio eum beatae fugiat dicta culpa cupiditate. Praesentium, beatae.</p>
+              <div class="servise__name">ALAIN HEYNDRICKX</div>
+            </div>
+            <div class="swiper-slide service__slide">
+              <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+              </svg>
+              <h3 class="servise__title">Suscipit iste voluptate itaque dolore pariatur</h3>
+              <p class="servise__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit iste voluptate itaque dolore pariatur, aperiam est fuga dolores atque placeat quasi optio eum beatae fugiat dicta culpa cupiditate. Praesentium, beatae.</p>
+              <div class="servise__name">ALAIN HEYNDRICKX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food" id="food">
+      <div class="container">
+        <div class="food__content  element-animation">
+          <div class="content__text">
+            <h3 class="food__title">
+              LEKKER ETEN
+            </h3>
+            <span class="food__border"></span>
+            <p class="food__description">
+              Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.
+            </p>
+          </div>
+          <picture>
+            <source media="(min-width:1200px)" srcset="/img/food_1.jpg">
+            <img src="/img/food_1_mob.jpg" alt="фото коктейля" class="food__img">
+          </picture>
+        </div>
+        <div class="food__content middle element-animation">
+          <div class="content__text">
+            <h3 class="food__title">
+              TOFFE AMBIANCE
+            </h3>
+            <span class="food__border middle__border"></span>
+            <p class="food__description">
+              Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.
+            </p>
+          </div>
+          <picture>
+            <source media="(min-width:1200px)" srcset="/img/food_2.jpg">
+            <img src="/img/food_2_mob.jpg" alt="фото коктейля" class="food__img">
+          </picture>
+        </div>
+        <div class="food__content  element-animation">
+          <div class="content__text">
+            <h3 class="food__title">
+              LEKKERE COCKTAILS
+            </h3>
+            <span class="food__border"></span>
+            <p class="food__description">
+              Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.
+            </p>
+          </div>
+          <picture>
+            <source media="(min-width:1200px)" srcset="/img/food_3.jpg">
+            <img src="/img/food_3_mob.jpg" alt="фото коктейля" class="food__img">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__content">
+          <div class="gallery__text">
+            <h2 class="title gallery__title">Sfeerfoto's</h2>
+            <div class="gallery__description">De beste manier om de sfeer te ervaren is eens langskomen. In tussentijd hebben we hier alvast wat foto’s voor je klaar.</div>
+          </div>
+          <div class="gallery__btns">
+            <div class="swiper-button-prev gallery__prev"></div>
+            <div class="swiper-button-next gallery__next"></div>  
+          </div>
+        </div>
+      </div>
+      <div class="swiper swiper__gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__slide">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/gallery_1.jpg">
+            <img src="/img/gallery_1_mob.jpg" alt="фото коктейля" class="gallery__img">
+          </picture>
+          </div>
+          <div class="swiper-slide gallery__slide">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/gallery_2.jpg">
+            <img src="/img/gallery_2_mob.jpg" alt="фото коктейля" class="gallery__img">
+          </picture>
+          </div>
+          <div class="swiper-slide gallery__slide">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/gallery_3.jpg">
+            <img src="/img/gallery_3_mob.jpg" alt="фото коктейля" class="gallery__img">
+          </picture>
+          </div>
+          <div class="swiper-slide gallery__slide">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/gallery_1.jpg">
+            <img src="/img/gallery_1_mob.jpg" alt="фото коктейля" class="gallery__img">
+          </picture>
+          </div>
+          <div class="swiper-slide gallery__slide">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/gallery_2.jpg">
+            <img src="/img/gallery_2_mob.jpg" alt="фото коктейля" class="gallery__img">
+          </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__content">
+          <div class="contacts__right-block element-animation">
+            <h3 class="title contacts__title">Contacts</h3>
+            <div class="contacts__info">
+              <div class="contacts__icon">
+                <svg class="phone" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 9C22 5.13 18.87 2 15 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <div class="contacts__label">Phone Number</div>
+                <a href="tel:+3292825725" class="contacts__description">+32 9 282 57 25</a>
+              </div>
+            </div>
+            <div class="contacts__info">
+              <div class="contacts__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              <div class="contacts__text">
+                <div class="contacts__label">Email</div>
+                <a href="mailto:+3292825725" class="contacts__description">info@email.com</a>
+              </div>
+            </div>
+            <div class="contacts__info">
+              <div class="contacts__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.71 15.18L12.61 13.33C12.07 13.01 11.63 12.24 11.63 11.61V7.51001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <div class="contacts__label">Opening Hours</div>
+                <div class="contacts__description">Everyday from 6 AM - 9 PM</div>
+              </div>
+            </div>
+            <div class="contacts__info">
+              <div class="contacts__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 9.00002V15C22 17.5 21.5 19.25 20.38 20.38L14 14L21.73 6.27002C21.91 7.06002 22 7.96002 22 9.00002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21.73 6.27L6.26999 21.73C3.25999 21.04 2 18.96 2 15V9C2 4 4 2 9 2H15C18.96 2 21.04 3.26 21.73 6.27Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.38 20.38C19.25 21.5 17.5 22 15 22H9.00003C7.96003 22 7.06002 21.91 6.27002 21.73L14 14L20.38 20.38Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.24002 7.97997C6.92002 5.04997 11.32 5.04997 12 7.97997C12.39 9.69997 11.31 11.16 10.36 12.06C9.67001 12.72 8.58003 12.72 7.88003 12.06C6.93003 11.16 5.84002 9.69997 6.24002 7.97997Z" stroke="white" stroke-width="1.5"/>
+                  <path d="M9.0946 8.69995H9.10359" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <div class="contacts__label">Map Street</div>
+                <div class="contacts__description">Jl. Raya Surabaya 2787</div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__left-block element-animation">
+            <h3 class="title form__title">have any questions?</h3>
+            <form class="contact__form" action="mail.php" method="post">
+              <div class="inp__container">
+                <input type="hidden" name="project_name" value="Tzeezotje">
+                <input type="hidden" name="admin_email" value="EcoKozhevnikov@yandex.ru">
+                <input type="hidden" name="form_subject" value="Contacts Form">
+                <label class="inp__label" for="name">Name</label>
+                <input
+                  class="inp"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Input your name"
+                  required
+                  >
+              </div>
+              <div class="inp__container">
+                <label class="inp__label" for="mail">Email</label>
+                <input
+                  class="inp"
+                  type="text"
+                  name="mail"
+                  id="mail"
+                  placeholder="Input your email"
+                  required
+                  >
+              </div>
+              <div class="inp__container inp__message">
+                <label class="inp__label" for="message">Speciale Request</label>
+                <textarea
+                  class="inp message"
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Input your special request"
+                  ></textarea>
+              </div>
+              <input class="btn contacts__btn" type="submit" id="submit" value="Send">
+            </form>
+          </div>
+        </div>
+        <div class="map" id="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#" class="logo">
+        <img src="/img/logo_footer.png" alt="logo">
+      </a>
+      <div class="footer__social">
+        <a class="social__link footer__link" href="#">Fb</a>
+        <a class="social__link footer__link" href="#">Ig</a>
+        <a class="social__link footer__link" href="#">Tw</a>
+        <a class="social__link footer__link" href="#">Yt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [51.02070367840841, 3.658880273590145],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 12
+        });
+
+        var myPlacemark = new ymaps.Placemark([51.00823111512307, 3.6281122249234814], {}, {
+          iconImageSize: [28, 40],
+          iconImageOffset: [-3, -42]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
