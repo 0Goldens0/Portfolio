@@ -473,7 +473,7 @@ button {
 .hero .container {
   position: relative;
   background-color: #f8f8f8;
-  background-image: url(/img/diamant.webp);
+  background-image: url(../img/diamant.webp);
   background-repeat: no-repeat;
   background-position: 0 24px;
 }
