@@ -60,7 +60,7 @@
   right: 1em;
   width: 12px;
   height: 12px;
-  background: url(/img/arow-bottom.png);
+  background: url(../img/arow-bottom.png);
   background-repeat: no-repeat;
   background-position: center;
   transition: all ease 0.15s;
@@ -74,7 +74,7 @@
   right: 1em;
   width: 12px;
   height: 12px;
-  background: url(/img/arow-top.png);
+  background: url(../img/arow-top.png);
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -101,7 +101,7 @@ html{
 
 
 .checkbox__item-text>input:checked+span::before {
-  background-image: url(/img/Rectangle.svg);
+  background-image: url(../img/Rectangle.svg);
 }
 
 .checkbox__item-text>input:checked+span::before {

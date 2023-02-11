@@ -159,7 +159,7 @@ svg {
 }
 
 .nav__link:hover {
- background-position: 0;
+  background-position: 0;
 }
 
 .nav__link:hover::before{
@@ -241,7 +241,7 @@ svg {
 
 .hero__img {
   max-height: 593px;
-  background-image: url(/img/hero-img.png);
+  background-image: url(../img/hero-img.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
